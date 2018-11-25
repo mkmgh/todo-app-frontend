@@ -212,7 +212,7 @@ var AppService = /** @class */ (function () {
     function AppService(http) {
         var _this = this;
         this.http = http;
-        this.url = 'http://localhost:3004';
+        this.url = 'http://api-todoapp.emayurm.in.net';
         this.baseURL = this.url + "/api/v1";
         this.getUserInfoFromLocalstorage = function () {
             return JSON.parse(localStorage.getItem('userInfo'));
@@ -672,7 +672,7 @@ var SocketService = /** @class */ (function () {
     function SocketService(http) {
         var _this = this;
         this.http = http;
-        this.baseurl = "http://localhost:3004";
+        this.baseurl = "http://api-todoapp.emayurm.in.net";
         //Authentication Section:
         this.verifyUser = function () {
             return rxjs__WEBPACK_IMPORTED_MODULE_1__["Observable"].create(function (observer) {
